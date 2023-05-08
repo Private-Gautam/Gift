@@ -78,7 +78,7 @@ const phrases = [
 'Love you 🦋',
 'Love you (it’s been too long)(and I mean it so please)',
 'Love youu🌚',
-'6/24/22, 18:56 - Gautam Malhotra: Love you Rhiya',
+'6/24/22, 18:56 - Gautam Malhotra: Love you Risha',
 '7/5/22, 21:33 - Gautam Malhotra: It\'s that love you keep talking about',
 '7/6/22, 01:08 - Gautam Malhotra: Love you ♥️',
 '7/6/22, 01:19 - Risha Garg: Love you too bum🙆🏻‍♀️',
@@ -289,7 +289,7 @@ const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 2500);
+    setTimeout(next, 2000);
   });
   counter = (counter + Math.floor(Math.random() * 20) + 1) % phrases.length;
 };
