@@ -61,6 +61,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
+'Today, Tomorrow and Always - Bum ❤️',
 'Love you🌸',
 '9/21/21, 23:47 - Gautam Malhotra: Love you too',
 'Love you for thi😬',
@@ -291,7 +292,7 @@ const next = () => {
   fx.setText(phrases[counter]).then(() => {
     setTimeout(next, 2000);
   });
-  counter = (counter + Math.floor(Math.random() * 20) + 1) % phrases.length;
+  counter = (counter + Math.floor(Math.random() * 99) + 1) % phrases.length;
 };
 
 next();
